@@ -93,3 +93,4 @@ D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Console\bin\Debug\n
 D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Console\bin\Debug\net8.0\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Console\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.Messages.dll
 D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Console\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Console\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Console.sourcelink.json

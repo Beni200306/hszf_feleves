@@ -15,13 +15,18 @@ namespace ADYMTY_HSZF_2024251.Model
         public int MonsterID { get; set; }
         [Required]
         [StringLength(30)]
+        [Convert]
+        //convert attribute is for the CreateInstance method
         public string Name { get; set; }
         [Required]
         [StringLength(30)]
+        [Convert]
         public string Level { get; set; }
         [Required]
+        [Convert]
         public int Strength { get; set; }
         [Required]
+        [Convert]
         public int Speed { get; set; }
         public virtual ICollection<Battle> Battles { get; set; }
         public Monsters()

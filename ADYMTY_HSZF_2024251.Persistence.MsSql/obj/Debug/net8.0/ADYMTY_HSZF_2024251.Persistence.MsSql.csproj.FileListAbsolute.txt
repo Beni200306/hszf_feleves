@@ -15,3 +15,4 @@ D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Persistence.MsSql\o
 D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Persistence.MsSql\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Persistence.MsSql.pdb
 D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Persistence.MsSql\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Persistence.MsSql.genruntimeconfig.cache
 D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Persistence.MsSql\obj\Debug\net8.0\ref\ADYMTY_HSZF_2024251.Persistence.MsSql.dll
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Persistence.MsSql\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Persistence.MsSql.sourcelink.json

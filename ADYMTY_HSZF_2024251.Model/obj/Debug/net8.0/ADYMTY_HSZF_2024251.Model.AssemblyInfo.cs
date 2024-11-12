@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ADYMTY_HSZF_2024251.Model")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e1c11f831c6ca85cd28de2d198b374629b2a03f")]
 [assembly: System.Reflection.AssemblyProductAttribute("ADYMTY_HSZF_2024251.Model")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ADYMTY_HSZF_2024251.Model")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

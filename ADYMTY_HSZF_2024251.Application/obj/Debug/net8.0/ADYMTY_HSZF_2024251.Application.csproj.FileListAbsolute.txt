@@ -15,3 +15,4 @@ D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Deb
 D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\refint\ADYMTY_HSZF_2024251.Application.dll
 D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Application.pdb
 D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ref\ADYMTY_HSZF_2024251.Application.dll
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Application.sourcelink.json
