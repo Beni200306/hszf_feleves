@@ -1,0 +1,17 @@
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\bin\Debug\net8.0\ADYMTY_HSZF_2024251.Application.deps.json
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\bin\Debug\net8.0\ADYMTY_HSZF_2024251.Application.dll
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\bin\Debug\net8.0\ADYMTY_HSZF_2024251.Application.pdb
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\bin\Debug\net8.0\ADYMTY_HSZF_2024251.Model.dll
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\bin\Debug\net8.0\ADYMTY_HSZF_2024251.Persistence.MsSql.dll
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\bin\Debug\net8.0\ADYMTY_HSZF_2024251.Model.pdb
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\bin\Debug\net8.0\ADYMTY_HSZF_2024251.Persistence.MsSql.pdb
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Application.csproj.AssemblyReference.cache
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Application.AssemblyInfoInputs.cache
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Application.AssemblyInfo.cs
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Application.csproj.CoreCompileInputs.cache
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ADYMTY_H.F17D25D5.Up2Date
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Application.dll
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\refint\ADYMTY_HSZF_2024251.Application.dll
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ADYMTY_HSZF_2024251.Application.pdb
+D:\egyetem\prog\hszf\ADYMTY_HSZF_2024251\ADYMTY_HSZF_2024251.Application\obj\Debug\net8.0\ref\ADYMTY_HSZF_2024251.Application.dll

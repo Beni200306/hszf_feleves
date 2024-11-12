@@ -1,0 +1,142 @@
+[
+  {
+    "Name": "Iron Titan",
+    "Category": "S",
+    "Strength": 95,
+    "Speed": 70,
+    "Abilities": "Super Punch, Invincibility Shield, Ground Slam"
+  },
+  {
+    "Name": "Shadow Phantom",
+    "Category": "A",
+    "Strength": 80,
+    "Speed": 90,
+    "Abilities": "Invisibility, Speed Dash, Shadow Strike"
+  },
+  {
+    "Name": "Blaze Fury",
+    "Category": "B",
+    "Strength": 85,
+    "Speed": 60,
+    "Abilities": "Flame Thrower, Fire Shield, Heat Vision"
+  },
+  {
+    "Name": "Swift Arrow",
+    "Category": "C",
+    "Strength": 65,
+    "Speed": 95,
+    "Abilities": "Arrow Barrage, Evasion, Precision Strike"
+  },
+  {
+    "Name": "Thunder Strike",
+    "Category": "A",
+    "Strength": 75,
+    "Speed": 80,
+    "Abilities": "Electric Shock, Thunderstorm, Super Jump"
+  },
+  {
+    "Name": "Nightmare",
+    "Category": "B",
+    "Strength": 70,
+    "Speed": 75,
+    "Abilities": "Dream Manipulation, Fear Aura, Sleep Inducement"
+  },
+  {
+    "Name": "Glacier Queen",
+    "Category": "S",
+    "Strength": 90,
+    "Speed": 60,
+    "Abilities": "Ice Blast, Freeze Field, Ice Wall"
+  },
+  {
+    "Name": "Vortex",
+    "Category": "A",
+    "Strength": 80,
+    "Speed": 85,
+    "Abilities": "Wind Manipulation, Cyclone Summon, Aerial Acrobatics"
+  },
+  {
+    "Name": "Titaness",
+    "Category": "S",
+    "Strength": 98,
+    "Speed": 55,
+    "Abilities": "Earthquake Stomp, Rock Shield, Super Strength"
+  },
+  {
+    "Name": "Seraphina",
+    "Category": "B",
+    "Strength": 75,
+    "Speed": 85,
+    "Abilities": "Healing Aura, Light Blast, Divine Shield"
+  },
+  {
+    "Name": "Crimson Fury",
+    "Category": "C",
+    "Strength": 70,
+    "Speed": 95,
+    "Abilities": "Blood Rage, Quick Reflexes, Adrenaline Rush"
+  },
+  {
+    "Name": "Specter",
+    "Category": "B",
+    "Strength": 78,
+    "Speed": 72,
+    "Abilities": "Phase Shift, Ghostly Howl, Spectral Strike"
+  },
+  {
+    "Name": "Solar Flare",
+    "Category": "A",
+    "Strength": 82,
+    "Speed": 85,
+    "Abilities": "Solar Beam, Sun Shield, Solar Flight"
+  },
+  {
+    "Name": "Lunar Shade",
+    "Category": "C",
+    "Strength": 65,
+    "Speed": 90,
+    "Abilities": "Moonlight Healing, Shadow Cloak, Lunar Blast"
+  },
+  {
+    "Name": "Aqua Warden",
+    "Category": "B",
+    "Strength": 80,
+    "Speed": 70,
+    "Abilities": "Water Manipulation, Tsunami Summon, Hydro Shield"
+  },
+  {
+    "Name": "Rogue Knight",
+    "Category": "C",
+    "Strength": 70,
+    "Speed": 80,
+    "Abilities": "Sword Mastery, Stealth, Shadow Strike"
+  },
+  {
+    "Name": "Phantom Queen",
+    "Category": "A",
+    "Strength": 76,
+    "Speed": 78,
+    "Abilities": "Phantom Strike, Invisibility, Fear Aura"
+  },
+  {
+    "Name": "Blizzard",
+    "Category": "B",
+    "Strength": 74,
+    "Speed": 68,
+    "Abilities": "Snowstorm, Ice Wall, Frostbite"
+  },
+  {
+    "Name": "Cybernova",
+    "Category": "A",
+    "Strength": 85,
+    "Speed": 85,
+    "Abilities": "Laser Blasts, Holographic Decoy, Tech Control"
+  },
+  {
+    "Name": "Windbreaker",
+    "Category": "S",
+    "Strength": 92,
+    "Speed": 92,
+    "Abilities": "Wind Slash, Air Manipulation, Speed Burst"
+  }
+]

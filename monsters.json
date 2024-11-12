@@ -1,0 +1,122 @@
+[
+  {
+    "Name": "Infernal Demon",
+    "Level": "Legendary",
+    "Strength": 95,
+    "Speed": 60
+  },
+  {
+    "Name": "Fire Drake",
+    "Level": "Epic",
+    "Strength": 85,
+    "Speed": 75
+  },
+  {
+    "Name": "Stone Golem",
+    "Level": "Mythic",
+    "Strength": 100,
+    "Speed": 40
+  },
+  {
+    "Name": "Shadow Wyvern",
+    "Level": "Epic",
+    "Strength": 90,
+    "Speed": 80
+  },
+  {
+    "Name": "Cursed Specter",
+    "Level": "Rare",
+    "Strength": 70,
+    "Speed": 90
+  },
+  {
+    "Name": "Thunder Wyrm",
+    "Level": "Epic",
+    "Strength": 80,
+    "Speed": 85
+  },
+  {
+    "Name": "Venomous Basilisk",
+    "Level": "Rare",
+    "Strength": 85,
+    "Speed": 65
+  },
+  {
+    "Name": "Frost Dragon",
+    "Level": "Legendary",
+    "Strength": 92,
+    "Speed": 70
+  },
+  {
+    "Name": "Dark Knight",
+    "Level": "Mythic",
+    "Strength": 88,
+    "Speed": 55
+  },
+  {
+    "Name": "Emerald Serpent",
+    "Level": "Epic",
+    "Strength": 78,
+    "Speed": 85
+  },
+  {
+    "Name": "Inferno Beast",
+    "Level": "Legendary",
+    "Strength": 95,
+    "Speed": 50
+  },
+  {
+    "Name": "Silver Dragon",
+    "Level": "Mythic",
+    "Strength": 87,
+    "Speed": 80
+  },
+  {
+    "Name": "Hellhound",
+    "Level": "Rare",
+    "Strength": 75,
+    "Speed": 85
+  },
+  {
+    "Name": "Crystal Wyvern",
+    "Level": "Epic",
+    "Strength": 83,
+    "Speed": 78
+  },
+  {
+    "Name": "Wicked Harbinger",
+    "Level": "Mythic",
+    "Strength": 90,
+    "Speed": 70
+  },
+  {
+    "Name": "Storm Dragon",
+    "Level": "Legendary",
+    "Strength": 95,
+    "Speed": 75
+  },
+  {
+    "Name": "Blood Fiend",
+    "Level": "Rare",
+    "Strength": 80,
+    "Speed": 60
+  },
+  {
+    "Name": "Wind Wyrm",
+    "Level": "Epic",
+    "Strength": 82,
+    "Speed": 90
+  },
+  {
+    "Name": "Soul Reaper",
+    "Level": "Mythic",
+    "Strength": 92,
+    "Speed": 65
+  },
+  {
+    "Name": "Lightning Dragon",
+    "Level": "Legendary",
+    "Strength": 94,
+    "Speed": 80
+  }
+]

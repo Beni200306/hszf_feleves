@@ -1,0 +1,260 @@
+[
+  {
+    "HeroID": 1,
+    "MonsterID": 2,
+    "BattleDate": "2024-11-01T10:30:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 2,
+    "MonsterID": 3,
+    "BattleDate": "2024-11-02T14:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 3,
+    "MonsterID": 4,
+    "BattleDate": "2024-11-03T09:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 4,
+    "MonsterID": 5,
+    "BattleDate": "2024-11-04T16:45:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 5,
+    "MonsterID": 6,
+    "BattleDate": "2024-11-05T13:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 6,
+    "MonsterID": 7,
+    "BattleDate": "2024-11-06T17:15:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 7,
+    "MonsterID": 8,
+    "BattleDate": "2024-11-07T11:20:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 8,
+    "MonsterID": 9,
+    "BattleDate": "2024-11-08T15:30:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 9,
+    "MonsterID": 10,
+    "BattleDate": "2024-11-09T18:00:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 10,
+    "MonsterID": 2,
+    "BattleDate": "2024-11-10T12:00:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 1,
+    "MonsterID": 6,
+    "BattleDate": "2024-11-11T10:30:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 2,
+    "MonsterID": 8,
+    "BattleDate": "2024-11-12T14:00:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 3,
+    "MonsterID": 9,
+    "BattleDate": "2024-11-13T09:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 4,
+    "MonsterID": 10,
+    "BattleDate": "2024-11-14T16:45:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 5,
+    "MonsterID": 7,
+    "BattleDate": "2024-11-15T13:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 6,
+    "MonsterID": 5,
+    "BattleDate": "2024-11-16T17:15:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 7,
+    "MonsterID": 4,
+    "BattleDate": "2024-11-17T11:20:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 8,
+    "MonsterID": 3,
+    "BattleDate": "2024-11-18T15:30:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 9,
+    "MonsterID": 6,
+    "BattleDate": "2024-11-19T18:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 10,
+    "MonsterID": 4,
+    "BattleDate": "2024-11-20T12:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 1,
+    "MonsterID": 7,
+    "BattleDate": "2024-11-21T10:30:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 2,
+    "MonsterID": 10,
+    "BattleDate": "2024-11-22T14:00:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 3,
+    "MonsterID": 6,
+    "BattleDate": "2024-11-23T09:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 4,
+    "MonsterID": 2,
+    "BattleDate": "2024-11-24T16:45:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 5,
+    "MonsterID": 9,
+    "BattleDate": "2024-11-25T13:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 6,
+    "MonsterID": 8,
+    "BattleDate": "2024-11-26T17:15:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 7,
+    "MonsterID": 5,
+    "BattleDate": "2024-11-27T11:20:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 8,
+    "MonsterID": 10,
+    "BattleDate": "2024-11-28T15:30:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 9,
+    "MonsterID": 2,
+    "BattleDate": "2024-11-29T18:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 10,
+    "MonsterID": 6,
+    "BattleDate": "2024-11-30T12:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 1,
+    "MonsterID": 4,
+    "BattleDate": "2024-12-01T10:00:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 2,
+    "MonsterID": 5,
+    "BattleDate": "2024-12-02T14:30:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 3,
+    "MonsterID": 9,
+    "BattleDate": "2024-12-03T09:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 4,
+    "MonsterID": 2,
+    "BattleDate": "2024-12-04T16:00:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 5,
+    "MonsterID": 8,
+    "BattleDate": "2024-12-05T13:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 6,
+    "MonsterID": 7,
+    "BattleDate": "2024-12-06T17:30:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 7,
+    "MonsterID": 3,
+    "BattleDate": "2024-12-07T11:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 8,
+    "MonsterID": 6,
+    "BattleDate": "2024-12-08T12:00:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 9,
+    "MonsterID": 5,
+    "BattleDate": "2024-12-09T15:30:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 10,
+    "MonsterID": 7,
+    "BattleDate": "2024-12-10T16:00:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 1,
+    "MonsterID": 3,
+    "BattleDate": "2024-12-11T11:30:00",
+    "Result": "Defeat"
+  },
+  {
+    "HeroID": 2,
+    "MonsterID": 9,
+    "BattleDate": "2024-12-12T12:30:00",
+    "Result": "Victory"
+  },
+  {
+    "HeroID": 3,
+    "MonsterID": 6,
+    "BattleDate": "2024-12-13T13:00:00",
+    "Result": "Victory"
+  }
+]
