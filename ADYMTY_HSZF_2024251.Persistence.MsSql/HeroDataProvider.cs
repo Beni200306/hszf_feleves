@@ -10,6 +10,8 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
     public interface IHeroDataProvider
     {
         Heroes GetHeroById(int id);
+        Heroes GetHeroByName(string name);
+        Heroes[] GetHeroesByCategory(string category);
         List<Heroes> GetHeroes();
         void AddHero(Heroes hero);
         void UpdateHero(Heroes hero);
@@ -35,9 +37,19 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
             return context.Heroes.First(a => a.HeroID == id);
         }
 
+        public Heroes GetHeroByName(string name)
+        {
+            return context.Heroes.First(a => a.Name == name); ;
+        }
+
         public List<Heroes> GetHeroes()
         {
             return context.Heroes.ToList();
+        }
+
+        public Heroes[] GetHeroesByCategory(string category)
+        {
+            return context.Heroes.Where(t=>t.Category==category).ToArray();
         }
 
         public void UpdateHero(Heroes hero)

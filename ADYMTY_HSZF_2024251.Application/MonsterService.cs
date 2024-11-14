@@ -11,11 +11,12 @@ namespace ADYMTY_HSZF_2024251.Application
     public interface IMonsterService
     {
         Monsters GetMonsterById(int id);
+        Monsters[] GetMonstersByLevel(string level);
         List<Monsters> GetMonsters();
         void AddMonster(Monsters monster);
         void UpdateMonster(Monsters monster);
     }
-    public class MonsterService:IMonsterService
+    public class MonsterService : IMonsterService
     {
 
         IMonsterDataProvider monsterDataProvider;
@@ -38,6 +39,11 @@ namespace ADYMTY_HSZF_2024251.Application
         public List<Monsters> GetMonsters()
         {
             return monsterDataProvider.GetMonsters();
+        }
+
+        public Monsters[] GetMonstersByLevel(string level)
+        {
+            return monsterDataProvider.GetMonstersByLevel(level);
         }
 
         public void UpdateMonster(Monsters monster)

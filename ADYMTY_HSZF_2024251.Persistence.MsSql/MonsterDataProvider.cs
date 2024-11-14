@@ -10,6 +10,7 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
     public interface IMonsterDataProvider
     {
         Monsters GetMonsterById(int id);
+        Monsters[] GetMonstersByLevel(string level);
         List<Monsters> GetMonsters();
         void AddMonster(Monsters monster);
         void UpdateMonster(Monsters monster);
@@ -37,6 +38,11 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
         public List<Monsters> GetMonsters()
         {
             return ctx.Monsters.ToList();
+        }
+
+        public Monsters[] GetMonstersByLevel(string level)
+        {
+            return ctx.Monsters.Where(t=>t.Level==level).ToArray();
         }
 
         public void UpdateMonster(Monsters monster)

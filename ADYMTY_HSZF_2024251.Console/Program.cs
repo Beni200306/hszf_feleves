@@ -7,6 +7,7 @@ using Newtonsoft.Json.Linq;
 using System.ComponentModel.Design;
 using System.Drawing;
 using System.Reflection;
+using System.Runtime.Intrinsics.X86;
 using System.Transactions;
 
 namespace ADYMTY_HSZF_2024251.console
@@ -44,19 +45,25 @@ namespace ADYMTY_HSZF_2024251.console
 
             var heroService = serviceProvider.GetService<IHeroService>();
 
-            var hero = heroService.GetHeroById(1);
+            //var hero = heroService.GetHeroById(1);
 
             var monsterService = serviceProvider.GetService<IMonsterService>();
-            var monster = monsterService.GetMonsters();
+            //var monster = monsterService.GetMonsters();
 
             var battleService = serviceProvider.GetService<IBattleService>();
-            var battle = battleService.GetBattles();
+            //var battle = battleService.GetBattles();
+
+            ;
+
 
             string[] mainMenuOptions = {
                 "Új hős felvétele",
                 "Új szörny felvétele",
                 "Meglévő hős módosítása",
                 "Meglévő szörny módosítása",
+                "Keresés hős név szerint",
+                "Keresés hős kategória szerint" ,
+                "Keresés szörny szint szerint"
             };
             
             Menu(mainMenuOptions, 0);

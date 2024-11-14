@@ -11,6 +11,8 @@ namespace ADYMTY_HSZF_2024251.Application
     public interface IHeroService
     {
         Heroes GetHeroById(int id);
+        Heroes GetHeroByName(string name);
+        Heroes[] GetHeroesByCategory(string category);
         List<Heroes> GetHeroes();
         void AddHero(Heroes hero);
         void UpdateHero(Heroes hero);
@@ -34,9 +36,19 @@ namespace ADYMTY_HSZF_2024251.Application
             return dataProvider.GetHeroById(id);
         }
 
+        public Heroes GetHeroByName(string name)
+        {
+            return this.dataProvider.GetHeroByName(name);
+        }
+
         public List<Heroes> GetHeroes()
         {
             return dataProvider.GetHeroes();
+        }
+
+        public Heroes[] GetHeroesByCategory(string category)
+        {
+            return dataProvider.GetHeroesByCategory(category);
         }
 
         public void UpdateHero(Heroes hero)
