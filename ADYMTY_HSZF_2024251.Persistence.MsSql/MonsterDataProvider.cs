@@ -11,6 +11,8 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
     {
         Monsters GetMonsterById(int id);
         List<Monsters> GetMonsters();
+        void AddMonster(Monsters monster);
+        void UpdateMonster(Monsters monster);
     }
     public class MonsterDataProvider : IMonsterDataProvider
     {
@@ -21,6 +23,12 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
             this.ctx = ctx;
         }
 
+        public void AddMonster(Monsters monster)
+        {
+            ctx.Monsters.Add(monster);
+            ctx.SaveChanges();
+        }
+
         public Monsters GetMonsterById(int id)
         {
             return ctx.Monsters.First(a=>a.MonsterID==id);
@@ -29,6 +37,16 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
         public List<Monsters> GetMonsters()
         {
             return ctx.Monsters.ToList();
+        }
+
+        public void UpdateMonster(Monsters monster)
+        {
+            Monsters toUpdate = ctx.Monsters.First(t => t.MonsterID == monster.MonsterID);
+            foreach (var prop in typeof(Monsters).GetProperties())
+            {
+                prop.SetValue(toUpdate, prop.GetValue(monster));
+            }
+            ctx.SaveChanges();
         }
     }
 }

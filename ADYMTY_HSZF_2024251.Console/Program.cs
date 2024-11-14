@@ -17,15 +17,18 @@ namespace ADYMTY_HSZF_2024251.console
         {
             //BattleContext bcontext = new BattleContext();
 
-            /*var host = Host.CreateDefaultBuilder().ConfigureServices(
-                (hostContext, services) => 
+            var host = Host.CreateDefaultBuilder().ConfigureServices(
+                (hostContext, services) =>
                 {
                     services.AddScoped<BattleContext>();
-                    services.AddSingleton<IHeroDataProvider,HeroDataProvider>();
-                    services.AddSingleton<IHeroService,HeroService>();
+                    services.AddSingleton<IHeroDataProvider, HeroDataProvider>();
+                    services.AddSingleton<IHeroService, HeroService>();
 
-                    services.AddSingleton<IMonsterDataProvider,MonsterDataProvider>();
-                    services.AddSingleton<IMonsterService,MonsterService>();
+                    services.AddSingleton<IMonsterDataProvider, MonsterDataProvider>();
+                    services.AddSingleton<IMonsterService, MonsterService>();
+
+                    services.AddSingleton<IBattleDataProvider, BattleDataProvider>();
+                    services.AddSingleton<IBattleService, BattleService>();
 
                     //TODO
                 }
@@ -40,15 +43,14 @@ namespace ADYMTY_HSZF_2024251.console
 
 
             var heroService = serviceProvider.GetService<IHeroService>();
-            
+
             var hero = heroService.GetHeroById(1);
-            
+
             var monsterService = serviceProvider.GetService<IMonsterService>();
             var monster = monsterService.GetMonsters();
 
             var battleService = serviceProvider.GetService<IBattleService>();
             var battle = battleService.GetBattles();
-            */
 
             string[] mainMenuOptions = {
                 "Új hős felvétele",
@@ -56,7 +58,7 @@ namespace ADYMTY_HSZF_2024251.console
                 "Meglévő hős módosítása",
                 "Meglévő szörny módosítása",
             };
-            ;
+            
             Menu(mainMenuOptions, 0);
 
         }

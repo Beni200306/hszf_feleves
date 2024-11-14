@@ -12,6 +12,8 @@ namespace ADYMTY_HSZF_2024251.Application
     {
         Monsters GetMonsterById(int id);
         List<Monsters> GetMonsters();
+        void AddMonster(Monsters monster);
+        void UpdateMonster(Monsters monster);
     }
     public class MonsterService:IMonsterService
     {
@@ -23,6 +25,11 @@ namespace ADYMTY_HSZF_2024251.Application
             this.monsterDataProvider = monsterDataProvider;
         }
 
+        public void AddMonster(Monsters monster)
+        {
+            monsterDataProvider.AddMonster(monster);
+        }
+
         public Monsters GetMonsterById(int id)
         {
             return monsterDataProvider.GetMonsterById(id);
@@ -32,6 +39,10 @@ namespace ADYMTY_HSZF_2024251.Application
         {
             return monsterDataProvider.GetMonsters();
         }
-        
+
+        public void UpdateMonster(Monsters monster)
+        {
+            monsterDataProvider.UpdateMonster(monster);
+        }
     }
 }
