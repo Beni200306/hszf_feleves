@@ -22,6 +22,8 @@ namespace ADYMTY_HSZF_2024251.console
                 (hostContext, services) =>
                 {
                     services.AddScoped<BattleContext>();
+
+
                     services.AddSingleton<IHeroDataProvider, HeroDataProvider>();
                     services.AddSingleton<IHeroService, HeroService>();
 
@@ -63,7 +65,9 @@ namespace ADYMTY_HSZF_2024251.console
                 "Meglévő szörny módosítása",
                 "Keresés hős név szerint",
                 "Keresés hős kategória szerint" ,
-                "Keresés szörny szint szerint"
+                "Keresés szörny szint szerint",
+                //"A legerősebb hősök listázása",
+                //"A leggyorsabb szörnyek listázása"
             };
             
             Menu(mainMenuOptions, 0);
@@ -85,6 +89,7 @@ namespace ADYMTY_HSZF_2024251.console
                 Console.ForegroundColor = ConsoleColor.White;
             }
             Console.WriteLine("-----------------");
+            Console.WriteLine("Up/Down arrow to navigate");
             Console.WriteLine("Press Esc to exit");
 
             ConsoleKey choice = Console.ReadKey().Key;
@@ -153,36 +158,6 @@ namespace ADYMTY_HSZF_2024251.console
             return re;
         }
 
-        static object ConvertValue(string input, Type targetType)
-        {
-            if (targetType == typeof(string))
-            {
-                return input; 
-            }
-            else if (targetType == typeof(int))
-            {
-                int.TryParse(input, out int result);
-                return result;
-            }
-            else if (targetType == typeof(double))
-            {
-                double.TryParse(input, out double result);
-                return result;
-            }
-            else if (targetType == typeof(bool))
-            {
-                bool.TryParse(input, out bool result);
-                return result;
-            }
-            else if (targetType == typeof(DateTime))
-            {
-                DateTime.TryParse(input, out DateTime result);
-                return result;
-            }
-            else
-            {
-                throw new InvalidOperationException($"Unsupported property type: {targetType.Name}");
-            }
-        }
+       
     }
 }
