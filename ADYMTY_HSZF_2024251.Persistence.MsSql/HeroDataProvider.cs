@@ -28,6 +28,9 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
 
         public void AddHero(Heroes hero)
         {
+            hero.HeroID = default(int);
+            int a = hero.HeroID;
+            ;
             context.Heroes.Add(hero);
             context.SaveChanges();
         }
@@ -39,7 +42,7 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
 
         public Heroes GetHeroByName(string name)
         {
-            return context.Heroes.FirstOrDefault(a => a.Name == name); ;
+            return context.Heroes.First(a => a.Name == name); ;
         }
 
         public Heroes[] GetHeroes()

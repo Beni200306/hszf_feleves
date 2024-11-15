@@ -26,6 +26,7 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
 
         public void AddMonster(Monsters monster)
         {
+            monster.MonsterID = default(int);
             ctx.Monsters.Add(monster);
             ctx.SaveChanges();
         }
