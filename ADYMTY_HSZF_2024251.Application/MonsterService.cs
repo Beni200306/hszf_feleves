@@ -13,8 +13,8 @@ namespace ADYMTY_HSZF_2024251.Application
         Monsters GetMonsterById(int id);
         Monsters[] GetMonstersByLevel(string level);
         Monsters[] GetMonsters();
-        void AddMonster(Monsters monster);
-        void UpdateMonster(Monsters monster);
+        void AddMonster();
+        void UpdateMonster();
         Monsters[] GetFastestMonsters();
         string[] GetMonstersName();
     }
@@ -28,9 +28,9 @@ namespace ADYMTY_HSZF_2024251.Application
             this.monsterDataProvider = monsterDataProvider;
         }
 
-        public void AddMonster(Monsters monster)
+        public void AddMonster()
         {
-            monsterDataProvider.AddMonster(monster);
+            monsterDataProvider.AddMonster(CreateInstance.createInstance<Monsters>());
         }
 
         public Monsters[] GetFastestMonsters()
@@ -59,9 +59,10 @@ namespace ADYMTY_HSZF_2024251.Application
             return monsterDataProvider.GetMonsters().Select(a => a.Name).ToArray();
         }
 
-        public void UpdateMonster(Monsters monster)
+        public void UpdateMonster()
         {
-            monsterDataProvider.UpdateMonster(monster);
+            Console.WriteLine("Give the ID of the monster you want to update: ");
+            monsterDataProvider.UpdateMonster(CreateInstance.createInstance<Monsters>());
         }
     }
 }
