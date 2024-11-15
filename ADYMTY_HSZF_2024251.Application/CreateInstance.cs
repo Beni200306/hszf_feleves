@@ -24,7 +24,6 @@ namespace ADYMTY_HSZF_2024251.Application
                     {
                         MethodInfo parse = prop.PropertyType.GetMethods().First(t => t.Name == "Parse");
                         object value = parse.Invoke(null, new object[] { input });
-                        //object value = ConvertValue(input, prop.PropertyType);
                         prop.SetValue(re, value);
                     }
                     else

@@ -44,8 +44,6 @@ namespace ADYMTY_HSZF_2024251.console
             IBattleService battleService = serviceProvider.GetService<IBattleService>();
 
 
-
-
             loop(heroService,monsterService,battleService);
         }
         static void loop(IHeroService hs, IMonsterService ms, IBattleService bs)
@@ -72,30 +70,48 @@ namespace ADYMTY_HSZF_2024251.console
                 switch (choice)
                 {
                     case 0:
+                        Console.WriteLine("Add new hero");
+                        Console.WriteLine();
                         hs.AddHero();
                         break;
                     case 1:
+                        Console.WriteLine("Add new monster");
+                        Console.WriteLine();
                         ms.AddMonster();
                         break;
                     case 2:
+                        Console.WriteLine("Update hero");
+                        Console.WriteLine();
                         hs.UpdateHero();
                         break;
                     case 3:
+                        Console.WriteLine("Update monster");
+                        Console.WriteLine();
                         ms.UpdateMonster();
                         break;
                     case 4:
+                        Console.WriteLine("Search hero by name:");
                         Console.Write("Name:");
+                        Console.WriteLine();
                         hs.GetHeroByName(Console.ReadLine()).ToConsole();
                         break;
                     case 5:
+                        Console.WriteLine("Search hero by category:");
                         Console.Write("Category:");
+                        Console.WriteLine();
                         foreach (var item in hs.GetHeroesByCategory(Console.ReadLine()))
                         {
                             item.ToConsole();
                         }
                         break;
                     case 6:
-                        ;
+                        Console.WriteLine("Search monster by level: ");
+                        Console.WriteLine();
+                        Console.Write("Level: ");
+                        foreach (var item in ms.GetMonstersByLevel(Console.ReadLine()))
+                        {
+                            item.ToConsole();
+                        }
                         break;
                     case 7:
                         ;
