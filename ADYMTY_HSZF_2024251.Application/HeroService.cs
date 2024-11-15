@@ -17,6 +17,7 @@ namespace ADYMTY_HSZF_2024251.Application
         void AddHero(Heroes hero);
         void UpdateHero(Heroes hero);
         Heroes[] GetStrongestHeroes();
+        string[] GetHeroesName();
         //Heroes[] GetStrongestHeroes();
     }
     public class HeroService : IHeroService
@@ -51,6 +52,11 @@ namespace ADYMTY_HSZF_2024251.Application
         public Heroes[] GetHeroesByCategory(string category)
         {
             return dataProvider.GetHeroesByCategory(category);
+        }
+
+        public string[] GetHeroesName()
+        {
+            return dataProvider.GetHeroes().Select(t => t.Name).ToArray();
         }
 
         public Heroes[] GetStrongestHeroes()

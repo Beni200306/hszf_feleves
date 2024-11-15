@@ -39,7 +39,7 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
 
         public Heroes GetHeroByName(string name)
         {
-            return context.Heroes.First(a => a.Name == name); ;
+            return context.Heroes.FirstOrDefault(a => a.Name == name); ;
         }
 
         public Heroes[] GetHeroes()

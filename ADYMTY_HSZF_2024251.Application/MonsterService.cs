@@ -16,6 +16,7 @@ namespace ADYMTY_HSZF_2024251.Application
         void AddMonster(Monsters monster);
         void UpdateMonster(Monsters monster);
         Monsters[] GetFastestMonsters();
+        string[] GetMonstersName();
     }
     public class MonsterService : IMonsterService
     {
@@ -51,6 +52,11 @@ namespace ADYMTY_HSZF_2024251.Application
         public Monsters[] GetMonstersByLevel(string level)
         {
             return monsterDataProvider.GetMonstersByLevel(level);
+        }
+
+        public string[] GetMonstersName()
+        {
+            return monsterDataProvider.GetMonsters().Select(a => a.Name).ToArray();
         }
 
         public void UpdateMonster(Monsters monster)

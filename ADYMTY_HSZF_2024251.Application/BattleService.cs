@@ -14,7 +14,7 @@ namespace ADYMTY_HSZF_2024251.Application
         List<Battle> GetBattles();
         void SimulateBattle(Heroes hero,Monsters monsters);
         void HeroesWinRate();
-        Monsters[] DefeatedMonsters();
+        void DefeatedMonsters();
     }
     public class BattleService : IBattleService
     {
@@ -51,6 +51,7 @@ namespace ADYMTY_HSZF_2024251.Application
                     winRate = (((double)a.Count(b=>b.Result=="Victory"))/((double)a.Count()))*100
                 }
             );
+            Console.Clear();
             Console.WriteLine("Heroes win rate");
             foreach (var item in statistic)
             {
@@ -59,15 +60,21 @@ namespace ADYMTY_HSZF_2024251.Application
 
         }
 
-        public Monsters[] DefeatedMonsters()
+        public void DefeatedMonsters()
         {
-            Monsters[] defeatedMonsters = battleDataProvider.GetBattles().Where(t=>t.Result=="Victory").Select(x=>x.Monster).Distinct().ToArray();
-            Console.WriteLine("Defeated monsters: ");
-            foreach (var item in defeatedMonsters)
+            Console.Clear();
+            var defeatedMonstersGroupByHeroes = battleDataProvider.GetBattles().Where(t=>t.Result=="Victory").GroupBy(x=>x.Hero);
+            
+            Console.WriteLine("-------------------------");
+            foreach (var item in defeatedMonstersGroupByHeroes)
             {
-                Console.WriteLine($"\t{item.Name}");
+                Console.WriteLine($"{item.Key.Name} defeated: ");
+                foreach (var battle in item)
+                {
+                    Console.WriteLine($"\t{battle.Monster.Name}");
+                }
+                Console.WriteLine("-------------------------");
             }
-            return defeatedMonsters;
         }
     }
 }

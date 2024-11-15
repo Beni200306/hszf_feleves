@@ -6,6 +6,7 @@ using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json.Linq;
 using System.ComponentModel.Design;
 using System.Drawing;
+using System.Net.WebSockets;
 using System.Reflection;
 using System.Runtime.Intrinsics.X86;
 using System.Transactions;
@@ -35,8 +36,6 @@ namespace ADYMTY_HSZF_2024251.console
 
             host.Start();
 
-
-
             using IServiceScope serviceScope = host.Services.CreateScope();
             IServiceProvider serviceProvider = serviceScope.ServiceProvider;
 
@@ -44,8 +43,13 @@ namespace ADYMTY_HSZF_2024251.console
             IMonsterService monsterService = serviceProvider.GetService<IMonsterService>();
             IBattleService battleService = serviceProvider.GetService<IBattleService>();
 
-            battleService.DefeatedMonsters();
-            ;
+
+
+
+            loop(heroService,monsterService,battleService);
+        }
+        static void loop(IHeroService hs, IMonsterService ms, IBattleService bs)
+        {
             string[] mainMenuOptions = {
                 "Új hős felvétele",
                 "Új szörny felvétele",
@@ -56,12 +60,64 @@ namespace ADYMTY_HSZF_2024251.console
                 "Keresés szörny szint szerint",
                 "A legerősebb hősök listázása",
                 "A leggyorsabb szörnyek listázása",
-                "Csata szimulálása"
+                "Csata szimulálása",
+                "Hősök győzelmi aránya",
+                "Legyőzött szörnyek listája"
             };
+
+            int choice = Menu(mainMenuOptions, 0);
+            while (choice!=-1)
+            {
+                switch (choice)
+                {
+                    case 0:
+                        hs.AddHero(CreateInstance<Heroes>());
+                        break;
+                    case 1:
+                        ms.AddMonster(CreateInstance<Monsters>());
+                        break;
+                    case 2:
+                        hs.UpdateHero(CreateInstance<Heroes>());
+                        break;
+                    case 3:
+                        ms.UpdateMonster(CreateInstance<Monsters>());
+                        break;
+                    case 4:
+                        Console.Clear();
+                        Console.Write("Name:");
+                        hs.GetHeroByName(Console.ReadLine()).ToConsole();
+                        break;
+                    case 5:
+                        ;
+                        break;
+                    case 6:
+                        ;
+                        break;
+                    case 7:
+                        ;
+                        break;
+                    case 8:
+                        ;
+                        break;
+                    case 9:
+                        ;
+                        break;
+
+
+                    default:
+                        break;
+                }
+
+                Console.WriteLine();
+                Console.WriteLine("Press any button to return to the menu");
+                Console.ReadKey();
+                choice = Menu(mainMenuOptions, 0);
+            }
             
-            int a=Menu(mainMenuOptions, 0);
-            ;
-            //SimulateBattle(heroService,monsterService,battleService);
+
+            
+
+
         }
         static int Menu(string[] options,int pointer)
         {
@@ -111,7 +167,7 @@ namespace ADYMTY_HSZF_2024251.console
                 case ConsoleKey.Enter:
                     return pointer;
                 case ConsoleKey.Escape:
-                    break;
+                    return -1;
 
                 default:
                     return Menu(options,pointer);
@@ -148,8 +204,8 @@ namespace ADYMTY_HSZF_2024251.console
         }
         static void SimulateBattle(IHeroService hs, IMonsterService ms, IBattleService bs)
         {
-            string[] heroes = hs.GetHeroes().Select(t => t.Name).ToArray();
-            string[] monsters= ms.GetMonsters().Select(a => a.Name).ToArray();
+            string[] heroes = hs.GetHeroesName();
+            string[] monsters= ms.GetMonstersName();
 
             Heroes hero= hs.GetHeroById(Menu(heroes,0)+1);
             Monsters monster= ms.GetMonsterById(Menu(monsters,0)+1);
