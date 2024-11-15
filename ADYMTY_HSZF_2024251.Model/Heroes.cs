@@ -14,6 +14,7 @@ namespace ADYMTY_HSZF_2024251.Model
         [ToConsole]
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Convert]
         public int HeroID { get; set; }
         [ToConsole]
         [Required]

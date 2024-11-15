@@ -68,27 +68,31 @@ namespace ADYMTY_HSZF_2024251.console
             int choice = Menu(mainMenuOptions, 0);
             while (choice!=-1)
             {
+                Console.Clear();
                 switch (choice)
                 {
                     case 0:
-                        hs.AddHero(CreateInstance<Heroes>());
+                        hs.AddHero();
                         break;
                     case 1:
-                        ms.AddMonster(CreateInstance<Monsters>());
+                        ms.AddMonster();
                         break;
                     case 2:
-                        hs.UpdateHero(CreateInstance<Heroes>());
+                        hs.UpdateHero();
                         break;
                     case 3:
-                        ms.UpdateMonster(CreateInstance<Monsters>());
+                        ms.UpdateMonster();
                         break;
                     case 4:
-                        Console.Clear();
                         Console.Write("Name:");
                         hs.GetHeroByName(Console.ReadLine()).ToConsole();
                         break;
                     case 5:
-                        ;
+                        Console.Write("Category:");
+                        foreach (var item in hs.GetHeroesByCategory(Console.ReadLine()))
+                        {
+                            item.ToConsole();
+                        }
                         break;
                     case 6:
                         ;
@@ -122,7 +126,7 @@ namespace ADYMTY_HSZF_2024251.console
         static int Menu(string[] options,int pointer)
         {
             Console.Clear();
-            ;
+
             for (int i = 0; i < options.Length; i++)
             {
                 if (pointer==i)

@@ -12,6 +12,7 @@ namespace ADYMTY_HSZF_2024251.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Convert]
         public int MonsterID { get; set; }
         [Required]
         [StringLength(30)]
