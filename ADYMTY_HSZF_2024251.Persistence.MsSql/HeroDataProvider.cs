@@ -12,7 +12,7 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
         Heroes GetHeroById(int id);
         Heroes GetHeroByName(string name);
         Heroes[] GetHeroesByCategory(string category);
-        List<Heroes> GetHeroes();
+        Heroes[] GetHeroes();
         void AddHero(Heroes hero);
         void UpdateHero(Heroes hero);
         //todo
@@ -42,9 +42,9 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
             return context.Heroes.First(a => a.Name == name); ;
         }
 
-        public List<Heroes> GetHeroes()
+        public Heroes[] GetHeroes()
         {
-            return context.Heroes.ToList();
+            return context.Heroes.ToArray();
         }
 
         public Heroes[] GetHeroesByCategory(string category)
@@ -54,7 +54,7 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
 
         public void UpdateHero(Heroes hero)
         {
-            Heroes toUpdate = context.Heroes.First(t=>t.HeroID==hero.HeroID);
+            Heroes toUpdate = GetHeroById(hero.HeroID);
             foreach (var prop in typeof(Heroes).GetProperties())
             {
                 prop.SetValue(toUpdate,prop.GetValue(hero));

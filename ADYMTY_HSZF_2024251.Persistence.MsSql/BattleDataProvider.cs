@@ -11,6 +11,7 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
     {
         Battle BattleById(int id);
         List<Battle> GetBattles();
+        void AddBattle(Battle battle);
     }
     public class BattleDataProvider:IBattleDataProvider
     {
@@ -21,6 +22,12 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
             this.ctx = ctx;
         }
 
+        public void AddBattle(Battle battle)
+        {
+            ctx.Battles.Add(battle);
+            ctx.SaveChanges();
+        }
+
         public Battle BattleById(int id)
         {
             return ctx.Battles.First(a=>a.BattleID==id);
@@ -28,6 +35,7 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
 
         public List<Battle> GetBattles()
         {
+            var battles = ctx.Battles;
             return ctx.Battles.ToList();
         }
     }

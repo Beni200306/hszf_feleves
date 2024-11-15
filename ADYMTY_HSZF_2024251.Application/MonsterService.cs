@@ -12,9 +12,10 @@ namespace ADYMTY_HSZF_2024251.Application
     {
         Monsters GetMonsterById(int id);
         Monsters[] GetMonstersByLevel(string level);
-        List<Monsters> GetMonsters();
+        Monsters[] GetMonsters();
         void AddMonster(Monsters monster);
         void UpdateMonster(Monsters monster);
+        Monsters[] GetFastestMonsters();
     }
     public class MonsterService : IMonsterService
     {
@@ -31,12 +32,18 @@ namespace ADYMTY_HSZF_2024251.Application
             monsterDataProvider.AddMonster(monster);
         }
 
+        public Monsters[] GetFastestMonsters()
+        {
+            Monsters[] monsters = monsterDataProvider.GetMonsters();
+            return monsters.Where(t => t.Speed==monsters.Max(a=>a.Speed)).ToArray();
+        }
+
         public Monsters GetMonsterById(int id)
         {
             return monsterDataProvider.GetMonsterById(id);
         }
 
-        public List<Monsters> GetMonsters()
+        public Monsters[] GetMonsters()
         {
             return monsterDataProvider.GetMonsters();
         }

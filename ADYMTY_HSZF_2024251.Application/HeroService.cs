@@ -13,9 +13,11 @@ namespace ADYMTY_HSZF_2024251.Application
         Heroes GetHeroById(int id);
         Heroes GetHeroByName(string name);
         Heroes[] GetHeroesByCategory(string category);
-        List<Heroes> GetHeroes();
+        Heroes[] GetHeroes();
         void AddHero(Heroes hero);
         void UpdateHero(Heroes hero);
+        Heroes[] GetStrongestHeroes();
+        //Heroes[] GetStrongestHeroes();
     }
     public class HeroService : IHeroService
     {
@@ -41,7 +43,7 @@ namespace ADYMTY_HSZF_2024251.Application
             return this.dataProvider.GetHeroByName(name);
         }
 
-        public List<Heroes> GetHeroes()
+        public Heroes[] GetHeroes()
         {
             return dataProvider.GetHeroes();
         }
@@ -51,9 +53,16 @@ namespace ADYMTY_HSZF_2024251.Application
             return dataProvider.GetHeroesByCategory(category);
         }
 
+        public Heroes[] GetStrongestHeroes()
+        {
+            var heroes = dataProvider.GetHeroes();
+            return heroes.Where(t=>t.Strength==heroes.Max(a=>a.Strength)).ToArray();
+        }
+
         public void UpdateHero(Heroes hero)
         {
             dataProvider.UpdateHero(hero);
         }
+        
     }
 }

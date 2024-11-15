@@ -18,9 +18,9 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
 
         public BattleContext()
         {
-            Database.EnsureDeleted();
+            //Database.EnsureDeleted();
             Database.EnsureCreated();
-            SeedData();
+            //SeedData();
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

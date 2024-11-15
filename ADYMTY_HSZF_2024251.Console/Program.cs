@@ -16,8 +16,6 @@ namespace ADYMTY_HSZF_2024251.console
     {
         static void Main(string[] args)
         {
-            //BattleContext bcontext = new BattleContext();
-
             var host = Host.CreateDefaultBuilder().ConfigureServices(
                 (hostContext, services) =>
                 {
@@ -32,8 +30,6 @@ namespace ADYMTY_HSZF_2024251.console
 
                     services.AddSingleton<IBattleDataProvider, BattleDataProvider>();
                     services.AddSingleton<IBattleService, BattleService>();
-
-                    //TODO
                 }
             ).Build();
 
@@ -44,20 +40,12 @@ namespace ADYMTY_HSZF_2024251.console
             using IServiceScope serviceScope = host.Services.CreateScope();
             IServiceProvider serviceProvider = serviceScope.ServiceProvider;
 
+            IHeroService heroService = serviceProvider.GetService<IHeroService>();
+            IMonsterService monsterService = serviceProvider.GetService<IMonsterService>();
+            IBattleService battleService = serviceProvider.GetService<IBattleService>();
 
-            var heroService = serviceProvider.GetService<IHeroService>();
-
-            //var hero = heroService.GetHeroById(1);
-
-            var monsterService = serviceProvider.GetService<IMonsterService>();
-            //var monster = monsterService.GetMonsters();
-
-            var battleService = serviceProvider.GetService<IBattleService>();
-            //var battle = battleService.GetBattles();
-
+            battleService.DefeatedMonsters();
             ;
-
-
             string[] mainMenuOptions = {
                 "Új hős felvétele",
                 "Új szörny felvétele",
@@ -66,14 +54,16 @@ namespace ADYMTY_HSZF_2024251.console
                 "Keresés hős név szerint",
                 "Keresés hős kategória szerint" ,
                 "Keresés szörny szint szerint",
-                //"A legerősebb hősök listázása",
-                //"A leggyorsabb szörnyek listázása"
+                "A legerősebb hősök listázása",
+                "A leggyorsabb szörnyek listázása",
+                "Csata szimulálása"
             };
             
-            Menu(mainMenuOptions, 0);
-
+            int a=Menu(mainMenuOptions, 0);
+            ;
+            //SimulateBattle(heroService,monsterService,battleService);
         }
-        static void Menu(string[] options,int pointer)
+        static int Menu(string[] options,int pointer)
         {
             Console.Clear();
             ;
@@ -90,46 +80,45 @@ namespace ADYMTY_HSZF_2024251.console
             }
             Console.WriteLine("-----------------");
             Console.WriteLine("Up/Down arrow to navigate");
+            Console.WriteLine("Enter to select");
             Console.WriteLine("Press Esc to exit");
 
             ConsoleKey choice = Console.ReadKey().Key;
-            ;
             switch (choice)
             {
                 case ConsoleKey.DownArrow:
                     if (++pointer < options.Length)
                     {
-                        Menu(options, pointer);
+                        return Menu(options, pointer);
                     }
                     else
                     {
-                        Menu(options, --pointer);
+                        return Menu(options, --pointer);
                     }
-                    break;
 
                 case ConsoleKey.UpArrow:
                     if (--pointer>-1)
                     {
-                        Menu(options, pointer);
+                        return Menu(options, pointer);
                     }
                     else
                     {
-                        Menu(options, ++pointer);
+                        return Menu(options, ++pointer);
                     }
                     
                     break;
 
                 case ConsoleKey.Enter:
-                    ;
-                    break;
+                    return pointer;
                 case ConsoleKey.Escape:
-                    return;
+                    break;
 
                 default:
-                    Menu(options,pointer);
-                    break;
+                    return Menu(options,pointer);
             }
 
+
+            return -1;
         }
         static T CreateInstance<T>()
         {
@@ -157,7 +146,16 @@ namespace ADYMTY_HSZF_2024251.console
             }
             return re;
         }
+        static void SimulateBattle(IHeroService hs, IMonsterService ms, IBattleService bs)
+        {
+            string[] heroes = hs.GetHeroes().Select(t => t.Name).ToArray();
+            string[] monsters= ms.GetMonsters().Select(a => a.Name).ToArray();
 
+            Heroes hero= hs.GetHeroById(Menu(heroes,0)+1);
+            Monsters monster= ms.GetMonsterById(Menu(monsters,0)+1);
+
+            bs.SimulateBattle(hero,monster);
+        }
        
     }
 }

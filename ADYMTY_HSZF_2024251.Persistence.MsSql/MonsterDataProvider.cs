@@ -11,7 +11,7 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
     {
         Monsters GetMonsterById(int id);
         Monsters[] GetMonstersByLevel(string level);
-        List<Monsters> GetMonsters();
+        Monsters[] GetMonsters();
         void AddMonster(Monsters monster);
         void UpdateMonster(Monsters monster);
     }
@@ -35,9 +35,9 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
             return ctx.Monsters.First(a=>a.MonsterID==id);
         }
 
-        public List<Monsters> GetMonsters()
+        public Monsters[] GetMonsters()
         {
-            return ctx.Monsters.ToList();
+            return ctx.Monsters.ToArray();
         }
 
         public Monsters[] GetMonstersByLevel(string level)
@@ -47,7 +47,7 @@ namespace ADYMTY_HSZF_2024251.Persistence.MsSql
 
         public void UpdateMonster(Monsters monster)
         {
-            Monsters toUpdate = ctx.Monsters.First(t => t.MonsterID == monster.MonsterID);
+            Monsters toUpdate = GetMonsterById(monster.MonsterID);
             foreach (var prop in typeof(Monsters).GetProperties())
             {
                 prop.SetValue(toUpdate, prop.GetValue(monster));
