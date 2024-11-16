@@ -18,6 +18,7 @@ namespace ADYMTY_HSZF_2024251.Application
         void HeroesWinRate();
         void DefeatedMonsters();
         void ToXml();
+        void FromXml();
     }
     public class BattleService : IBattleService
     {
@@ -87,7 +88,7 @@ namespace ADYMTY_HSZF_2024251.Application
 
             xdoc.Add(root);
 
-            Battle[] battles= GetBattles().ToArray();
+            Battle[] battles = GetBattles().ToArray();
 
             root.Add(battles.Select(t =>
             {
@@ -102,6 +103,20 @@ namespace ADYMTY_HSZF_2024251.Application
             }));
 
             xdoc.Save(@"..\..\..\..\battles.xml");
+        }
+
+        public void FromXml()
+        {
+            Battle[] battles=XDocument.Load(@"..\..\..\..\battles.xml").Root.Elements("battles").Select(
+                t => {
+                    return new Battle() { 
+                        BattleDate=DateTime.Parse(t.Element("BattleDate").Value),
+                        BattleID =int.Parse(t.Element("BattleID").Value),
+                        HeroID =int.Parse(t.Element("HeroID").Value), 
+                        MonsterID =int.Parse(t.Element("MonsterID").Value), 
+                        Result=t.Element("Result").Value};
+                }).ToArray();
+            ;
         }
     }
 }

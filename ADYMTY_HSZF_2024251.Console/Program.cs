@@ -48,7 +48,7 @@ namespace ADYMTY_HSZF_2024251.console
             heroService.ToXml();
             battleService.ToXml();
             monsterService.ToXml();
-
+            battleService.FromXml();
             //loop(heroService,monsterService,battleService);
         }
         static void loop(IHeroService hs, IMonsterService ms, IBattleService bs)
