@@ -129,7 +129,9 @@ namespace ADYMTY_HSZF_2024251.Application
             {
                 toTxt += $"{item.hero},{item.noOfBattles},{item.winrate}\n";
             }
-            File.WriteAllText(@"..\..\..\..\heroStatistics.txt",toTxt);
+
+            Directory.CreateDirectory(@"..\..\..\..\Reports");
+            File.WriteAllText(@"..\..\..\..\Reports\heroStatistics.txt",toTxt);
             ;
         }
     }
