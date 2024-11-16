@@ -20,6 +20,7 @@ namespace ADYMTY_HSZF_2024251.Application
         void ToXml();
         void FromXml();
         void HeroesNoOfBattlesToTxt();
+        void UndefeatedMonsters();
     }
     public class BattleService : IBattleService
     {
@@ -132,6 +133,13 @@ namespace ADYMTY_HSZF_2024251.Application
 
             Directory.CreateDirectory(@"..\..\..\..\Reports");
             File.WriteAllText(@"..\..\..\..\Reports\heroStatistics.txt",toTxt);
+            ;
+        }
+
+        public void UndefeatedMonsters()
+        {
+            var groupByMonsters = GetBattles().GroupBy(t=>t.Monster);
+            var undefeatedMonsters = groupByMonsters.Where(a => a.Count(b => b.Result == "Defeat") == a.Count()).Select(monster=>monster.Key);
             ;
         }
     }

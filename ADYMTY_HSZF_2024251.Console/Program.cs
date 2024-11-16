@@ -45,7 +45,7 @@ namespace ADYMTY_HSZF_2024251.console
             IBattleService battleService = serviceProvider.GetService<IBattleService>();
 
 
-            battleService.HeroesNoOfBattlesToTxt();
+            battleService.UndefeatedMonsters();
             //loop(heroService,monsterService,battleService);
         }
         static void loop(IHeroService hs, IMonsterService ms, IBattleService bs)
