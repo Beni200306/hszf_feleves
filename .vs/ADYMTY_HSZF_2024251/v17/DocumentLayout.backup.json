@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{70DAAD87-88D4-490F-965A-5D6A1FD94D44}|ADYMTY_HSZF_2024251.Console\\ADYMTY_HSZF_2024251.Console.csproj|c:\\users\\roxi\\desktop\\beni\\hszf_feleves\\adymty_hszf_2024251.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70DAAD87-88D4-490F-965A-5D6A1FD94D44}|ADYMTY_HSZF_2024251.Console\\ADYMTY_HSZF_2024251.Console.csproj|solutionrelative:adymty_hszf_2024251.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41DCD841-D56F-4046-BD3F-048B7E23A97B}|ADYMTY_HSZF_2024251.Application\\ADYMTY_HSZF_2024251.Application.csproj|c:\\users\\roxi\\desktop\\beni\\hszf_feleves\\adymty_hszf_2024251.application\\monsterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41DCD841-D56F-4046-BD3F-048B7E23A97B}|ADYMTY_HSZF_2024251.Application\\ADYMTY_HSZF_2024251.Application.csproj|solutionrelative:adymty_hszf_2024251.application\\monsterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41DCD841-D56F-4046-BD3F-048B7E23A97B}|ADYMTY_HSZF_2024251.Application\\ADYMTY_HSZF_2024251.Application.csproj|c:\\users\\roxi\\desktop\\beni\\hszf_feleves\\adymty_hszf_2024251.application\\heroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41DCD841-D56F-4046-BD3F-048B7E23A97B}|ADYMTY_HSZF_2024251.Application\\ADYMTY_HSZF_2024251.Application.csproj|solutionrelative:adymty_hszf_2024251.application\\heroservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41DCD841-D56F-4046-BD3F-048B7E23A97B}|ADYMTY_HSZF_2024251.Application\\ADYMTY_HSZF_2024251.Application.csproj|c:\\users\\roxi\\desktop\\beni\\hszf_feleves\\adymty_hszf_2024251.application\\battleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41DCD841-D56F-4046-BD3F-048B7E23A97B}|ADYMTY_HSZF_2024251.Application\\ADYMTY_HSZF_2024251.Application.csproj|solutionrelative:adymty_hszf_2024251.application\\battleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13DA9CEB-03AA-4470-92E7-FF1234C2DF45}|ADYMTY_HSZF_2024251.Model\\ADYMTY_HSZF_2024251.Model.csproj|c:\\users\\roxi\\desktop\\beni\\hszf_feleves\\adymty_hszf_2024251.model\\heroes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13DA9CEB-03AA-4470-92E7-FF1234C2DF45}|ADYMTY_HSZF_2024251.Model\\ADYMTY_HSZF_2024251.Model.csproj|solutionrelative:adymty_hszf_2024251.model\\heroes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{13DA9CEB-03AA-4470-92E7-FF1234C2DF45}|ADYMTY_HSZF_2024251.Model\\ADYMTY_HSZF_2024251.Model.csproj|c:\\users\\roxi\\desktop\\beni\\hszf_feleves\\adymty_hszf_2024251.model\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13DA9CEB-03AA-4470-92E7-FF1234C2DF45}|ADYMTY_HSZF_2024251.Model\\ADYMTY_HSZF_2024251.Model.csproj|solutionrelative:adymty_hszf_2024251.model\\battle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MonsterService.cs",
+              "DocumentMoniker": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Application\\MonsterService.cs",
+              "RelativeDocumentMoniker": "ADYMTY_HSZF_2024251.Application\\MonsterService.cs",
+              "ToolTip": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Application\\MonsterService.cs",
+              "RelativeToolTip": "ADYMTY_HSZF_2024251.Application\\MonsterService.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA6wBQAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T16:31:12.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Battle.cs",
+              "DocumentMoniker": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Model\\Battle.cs",
+              "RelativeDocumentMoniker": "ADYMTY_HSZF_2024251.Model\\Battle.cs",
+              "ToolTip": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Model\\Battle.cs",
+              "RelativeToolTip": "ADYMTY_HSZF_2024251.Model\\Battle.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T15:53:10.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Heroes.cs",
+              "DocumentMoniker": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Model\\Heroes.cs",
+              "RelativeDocumentMoniker": "ADYMTY_HSZF_2024251.Model\\Heroes.cs",
+              "ToolTip": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Model\\Heroes.cs",
+              "RelativeToolTip": "ADYMTY_HSZF_2024251.Model\\Heroes.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAswEQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T15:18:12.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HeroService.cs",
+              "DocumentMoniker": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Application\\HeroService.cs",
+              "RelativeDocumentMoniker": "ADYMTY_HSZF_2024251.Application\\HeroService.cs",
+              "ToolTip": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Application\\HeroService.cs",
+              "RelativeToolTip": "ADYMTY_HSZF_2024251.Application\\HeroService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAAC8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T14:51:30.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BattleService.cs",
+              "DocumentMoniker": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Application\\BattleService.cs",
+              "RelativeDocumentMoniker": "ADYMTY_HSZF_2024251.Application\\BattleService.cs",
+              "ToolTip": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Application\\BattleService.cs",
+              "RelativeToolTip": "ADYMTY_HSZF_2024251.Application\\BattleService.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAAAGcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T14:45:42.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Console\\Program.cs",
+              "RelativeDocumentMoniker": "ADYMTY_HSZF_2024251.Console\\Program.cs",
+              "ToolTip": "C:\\Users\\Roxi\\Desktop\\beni\\hszf_feleves\\ADYMTY_HSZF_2024251.Console\\Program.cs",
+              "RelativeToolTip": "ADYMTY_HSZF_2024251.Console\\Program.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAQwDEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T13:26:13.099Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

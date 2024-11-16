@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ADYMTY_HSZF_2024251.Application
 {
@@ -17,11 +18,30 @@ namespace ADYMTY_HSZF_2024251.Application
         void UpdateMonster();
         Monsters[] GetFastestMonsters();
         string[] GetMonstersName();
+        void ToXml();
     }
     public class MonsterService : IMonsterService
     {
 
         IMonsterDataProvider monsterDataProvider;
+        public void ToXml()
+        {
+            XDocument xdoc = new XDocument();
+            XElement root = new XElement("Monsters");
+            xdoc.Add(root);
+            root.Add(GetMonsters().Select(t => {
+
+                return new XElement("Monster",
+                    new XElement("MonsterID", t.MonsterID),
+                    new XElement("Name", t.Name),
+                    new XElement("Speed", t.Speed),
+                    new XElement("Strength", t.Strength),
+                    new XElement("Level", t.Level)
+                    );
+            }
+            ));
+            xdoc.Save(@"..\..\..\..\monsters.xml");
+        }
 
         public MonsterService(IMonsterDataProvider monsterDataProvider)
         {

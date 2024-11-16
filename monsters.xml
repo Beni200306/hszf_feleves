@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Monsters>
+  <Monster>
+    <MonsterID>1</MonsterID>
+    <Name>Infernal Demon</Name>
+    <Speed>60</Speed>
+    <Strength>95</Strength>
+    <Level>Legendary</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>2</MonsterID>
+    <Name>Fire Drake</Name>
+    <Speed>75</Speed>
+    <Strength>85</Strength>
+    <Level>Epic</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>3</MonsterID>
+    <Name>Stone Golem</Name>
+    <Speed>40</Speed>
+    <Strength>100</Strength>
+    <Level>Mythic</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>4</MonsterID>
+    <Name>Shadow Wyvern</Name>
+    <Speed>80</Speed>
+    <Strength>90</Strength>
+    <Level>Epic</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>5</MonsterID>
+    <Name>Cursed Specter</Name>
+    <Speed>90</Speed>
+    <Strength>70</Strength>
+    <Level>Rare</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>6</MonsterID>
+    <Name>Thunder Wyrm</Name>
+    <Speed>85</Speed>
+    <Strength>80</Strength>
+    <Level>Epic</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>7</MonsterID>
+    <Name>Venomous Basilisk</Name>
+    <Speed>65</Speed>
+    <Strength>85</Strength>
+    <Level>Rare</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>8</MonsterID>
+    <Name>Frost Dragon</Name>
+    <Speed>70</Speed>
+    <Strength>92</Strength>
+    <Level>Legendary</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>9</MonsterID>
+    <Name>Dark Knight</Name>
+    <Speed>55</Speed>
+    <Strength>88</Strength>
+    <Level>Mythic</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>10</MonsterID>
+    <Name>Emerald Serpent</Name>
+    <Speed>85</Speed>
+    <Strength>78</Strength>
+    <Level>Epic</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>11</MonsterID>
+    <Name>Inferno Beast</Name>
+    <Speed>50</Speed>
+    <Strength>95</Strength>
+    <Level>Legendary</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>12</MonsterID>
+    <Name>Silver Dragon</Name>
+    <Speed>80</Speed>
+    <Strength>87</Strength>
+    <Level>Mythic</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>13</MonsterID>
+    <Name>Hellhound</Name>
+    <Speed>85</Speed>
+    <Strength>75</Strength>
+    <Level>Rare</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>14</MonsterID>
+    <Name>Crystal Wyvern</Name>
+    <Speed>78</Speed>
+    <Strength>83</Strength>
+    <Level>Epic</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>15</MonsterID>
+    <Name>Wicked Harbinger</Name>
+    <Speed>70</Speed>
+    <Strength>90</Strength>
+    <Level>Mythic</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>16</MonsterID>
+    <Name>Storm Dragon</Name>
+    <Speed>75</Speed>
+    <Strength>95</Strength>
+    <Level>Legendary</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>17</MonsterID>
+    <Name>Blood Fiend</Name>
+    <Speed>60</Speed>
+    <Strength>80</Strength>
+    <Level>Rare</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>18</MonsterID>
+    <Name>Wind Wyrm</Name>
+    <Speed>90</Speed>
+    <Strength>82</Strength>
+    <Level>Epic</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>19</MonsterID>
+    <Name>Soul Reaper</Name>
+    <Speed>65</Speed>
+    <Strength>92</Strength>
+    <Level>Mythic</Level>
+  </Monster>
+  <Monster>
+    <MonsterID>20</MonsterID>
+    <Name>Lightning Dragon</Name>
+    <Speed>80</Speed>
+    <Strength>94</Strength>
+    <Level>Legendary</Level>
+  </Monster>
+</Monsters>

@@ -3,8 +3,12 @@ using ADYMTY_HSZF_2024251.Persistence.MsSql;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
+using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace ADYMTY_HSZF_2024251.Application
 {
@@ -18,7 +22,7 @@ namespace ADYMTY_HSZF_2024251.Application
         void UpdateHero();
         Heroes[] GetStrongestHeroes();
         string[] GetHeroesName();
-        //Heroes[] GetStrongestHeroes();
+        void ToXml();
     }
     public class HeroService : IHeroService
     {
@@ -32,6 +36,26 @@ namespace ADYMTY_HSZF_2024251.Application
         public void AddHero()
         {
             dataProvider.AddHero(CreateInstance.createInstance<Heroes>());
+        }
+
+        public void ToXml()
+        {
+            XDocument xdoc = new XDocument();
+            XElement root = new XElement("Heroes");
+            xdoc.Add(root);
+            root.Add(GetHeroes().Select(t=>{
+
+                return new XElement("Hero",
+                    new XElement("HeroID", t.HeroID),
+                    new XElement("Name", t.Name),
+                    new XElement("Speed", t.Speed),
+                    new XElement("Strength", t.Strength),
+                    new XElement("Abilities", t.Abilities),
+                    new XElement("Category", t.Category)                    
+                    );
+                }
+            ) );
+            xdoc.Save(@"..\..\..\..\heroes.xml");
         }
 
         public Heroes GetHeroById(int id)

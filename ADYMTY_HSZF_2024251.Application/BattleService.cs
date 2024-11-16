@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace ADYMTY_HSZF_2024251.Application
 {
@@ -15,6 +17,7 @@ namespace ADYMTY_HSZF_2024251.Application
         void SimulateBattle(Heroes hero,Monsters monsters);
         void HeroesWinRate();
         void DefeatedMonsters();
+        void ToXml();
     }
     public class BattleService : IBattleService
     {
@@ -43,7 +46,6 @@ namespace ADYMTY_HSZF_2024251.Application
 
         public void HeroesWinRate()
         {
-            var battles = battleDataProvider.GetBattles();
             var groupByHero = battleDataProvider.GetBattles().GroupBy(t => t.Hero);
             var statistic = groupByHero.Select(a=>new
                 {
@@ -55,7 +57,7 @@ namespace ADYMTY_HSZF_2024251.Application
             Console.WriteLine("Heroes win rate");
             foreach (var item in statistic)
             {
-                Console.WriteLine($"{item.hero.Name} winrate: {item.winRate}");
+                Console.WriteLine($"{item.hero.Name} winrate: {item.winRate}%");
             }
 
         }
@@ -75,6 +77,31 @@ namespace ADYMTY_HSZF_2024251.Application
                 }
                 Console.WriteLine("-------------------------");
             }
+        }
+
+        public void ToXml()
+        {
+            XDocument xdoc = new XDocument();
+
+            XElement root = new XElement("Battles");
+
+            xdoc.Add(root);
+
+            Battle[] battles= GetBattles().ToArray();
+
+            root.Add(battles.Select(t =>
+            {
+                return new XElement("battles",
+
+                    new XElement("BattleID", t.BattleID),
+                    new XElement("HeroID", t.HeroID),
+                    new XElement("MonsterID", t.MonsterID),
+                    new XElement("BattleDate", t.BattleDate),
+                    new XElement("Result", t.Result));
+
+            }));
+
+            xdoc.Save(@"..\..\..\..\battles.xml");
         }
     }
 }

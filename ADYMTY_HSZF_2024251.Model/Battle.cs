@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Xml.Serialization;
 
 namespace ADYMTY_HSZF_2024251.Model
 {
@@ -13,14 +14,17 @@ namespace ADYMTY_HSZF_2024251.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        
         public int BattleID { get; set; }
         [Required]
         public int HeroID { get; set; }
         [Required]
+        [XmlIgnore]
         public virtual Heroes Hero { get; set; }
         [Required]
         public int MonsterID { get; set; }
         [Required]
+        [XmlIgnore]
         public virtual Monsters Monster { get; set; }
         [Required]
         public DateTime BattleDate { get; set; }

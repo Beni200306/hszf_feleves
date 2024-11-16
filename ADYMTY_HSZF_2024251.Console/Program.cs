@@ -4,6 +4,7 @@ using ADYMTY_HSZF_2024251.Persistence.MsSql;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json.Linq;
+using System.ComponentModel;
 using System.ComponentModel.Design;
 using System.Drawing;
 using System.Net.WebSockets;
@@ -44,7 +45,11 @@ namespace ADYMTY_HSZF_2024251.console
             IBattleService battleService = serviceProvider.GetService<IBattleService>();
 
 
-            loop(heroService,monsterService,battleService);
+            heroService.ToXml();
+            battleService.ToXml();
+            monsterService.ToXml();
+
+            //loop(heroService,monsterService,battleService);
         }
         static void loop(IHeroService hs, IMonsterService ms, IBattleService bs)
         {
@@ -114,15 +119,34 @@ namespace ADYMTY_HSZF_2024251.console
                         }
                         break;
                     case 7:
-                        ;
+                        Console.WriteLine("Strongest heroes: ");
+                        foreach (var item in hs.GetStrongestHeroes())
+                        {
+                            Console.WriteLine($"\t{item.Name}");
+                        };
                         break;
                     case 8:
-                        ;
+                        Console.WriteLine("Fastest monsters:");
+                        Console.WriteLine();
+                        foreach (var item in ms.GetFastestMonsters())
+                        {
+                            Console.WriteLine($"\t{item.Name}");
+                        };
                         break;
                     case 9:
-                        ;
+                        Console.WriteLine("Simulate battle");
+                        Console.WriteLine();
+                        SimulateBattle(hs, ms, bs);
                         break;
 
+                    case 10:
+                        Console.WriteLine("Win rate of heroes");
+                        bs.HeroesWinRate();
+                        break;
+                    case 11:
+                        Console.WriteLine("Monsters defeated by heroes");
+                        bs.DefeatedMonsters();
+                        break;
 
                     default:
                         break;
@@ -133,16 +157,11 @@ namespace ADYMTY_HSZF_2024251.console
                 Console.ReadKey();
                 choice = Menu(mainMenuOptions, 0);
             }
-            
-
-            
-
-
         }
         static int Menu(string[] options,int pointer)
         {
             Console.Clear();
-
+            ///Returns the value of the chosen menu option
             for (int i = 0; i < options.Length; i++)
             {
                 if (pointer==i)
@@ -196,39 +215,14 @@ namespace ADYMTY_HSZF_2024251.console
 
             return -1;
         }
-        static T CreateInstance<T>()
-        {
-            T re = (T)Activator.CreateInstance(typeof(T));
-            foreach (var prop in re.GetType().GetProperties())
-            {
-                if (prop.GetCustomAttribute<ConvertAttribute>()!=null)
-                {
-                    Console.WriteLine($"Enter value for {prop.Name} ({prop.PropertyType.Name}):");
-
-                    string input = Console.ReadLine();
-                    if (prop.PropertyType != typeof(string))
-                    {
-                        MethodInfo parse = prop.PropertyType.GetMethods().First(t=>t.Name=="Parse");
-                        object value = parse.Invoke(null,new object[] {input });
-                        //object value = ConvertValue(input, prop.PropertyType);
-                        prop.SetValue(re, value);
-                    }
-                    else
-                    {
-                        prop.SetValue(re, input);
-                    }
-                }
-                
-            }
-            return re;
-        }
+        
         static void SimulateBattle(IHeroService hs, IMonsterService ms, IBattleService bs)
         {
             string[] heroes = hs.GetHeroesName();
             string[] monsters= ms.GetMonstersName();
 
-            Heroes hero= hs.GetHeroById(Menu(heroes,0)+1);
-            Monsters monster= ms.GetMonsterById(Menu(monsters,0)+1);
+            Heroes hero = hs.GetHeroById(Menu(heroes,0)+1);
+            Monsters monster = ms.GetMonsterById(Menu(monsters,0)+1);
 
             bs.SimulateBattle(hero,monster);
         }

@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Heroes>
+  <Hero>
+    <HeroID>1</HeroID>
+    <Name>Iron Titan</Name>
+    <Speed>70</Speed>
+    <Strength>95</Strength>
+    <Abilities>Super Punch, Invincibility Shield, Ground Slam</Abilities>
+    <Category>S</Category>
+  </Hero>
+  <Hero>
+    <HeroID>2</HeroID>
+    <Name>Shadow Phantom</Name>
+    <Speed>90</Speed>
+    <Strength>80</Strength>
+    <Abilities>Invisibility, Speed Dash, Shadow Strike</Abilities>
+    <Category>A</Category>
+  </Hero>
+  <Hero>
+    <HeroID>3</HeroID>
+    <Name>Blaze Fury</Name>
+    <Speed>60</Speed>
+    <Strength>85</Strength>
+    <Abilities>Flame Thrower, Fire Shield, Heat Vision</Abilities>
+    <Category>B</Category>
+  </Hero>
+  <Hero>
+    <HeroID>4</HeroID>
+    <Name>Swift Arrow</Name>
+    <Speed>95</Speed>
+    <Strength>65</Strength>
+    <Abilities>Arrow Barrage, Evasion, Precision Strike</Abilities>
+    <Category>C</Category>
+  </Hero>
+  <Hero>
+    <HeroID>5</HeroID>
+    <Name>Thunder Strike</Name>
+    <Speed>80</Speed>
+    <Strength>75</Strength>
+    <Abilities>Electric Shock, Thunderstorm, Super Jump</Abilities>
+    <Category>A</Category>
+  </Hero>
+  <Hero>
+    <HeroID>6</HeroID>
+    <Name>Nightmare</Name>
+    <Speed>75</Speed>
+    <Strength>70</Strength>
+    <Abilities>Dream Manipulation, Fear Aura, Sleep Inducement</Abilities>
+    <Category>B</Category>
+  </Hero>
+  <Hero>
+    <HeroID>7</HeroID>
+    <Name>Glacier Queen</Name>
+    <Speed>60</Speed>
+    <Strength>90</Strength>
+    <Abilities>Ice Blast, Freeze Field, Ice Wall</Abilities>
+    <Category>S</Category>
+  </Hero>
+  <Hero>
+    <HeroID>8</HeroID>
+    <Name>Vortex</Name>
+    <Speed>85</Speed>
+    <Strength>80</Strength>
+    <Abilities>Wind Manipulation, Cyclone Summon, Aerial Acrobatics</Abilities>
+    <Category>A</Category>
+  </Hero>
+  <Hero>
+    <HeroID>9</HeroID>
+    <Name>Titaness</Name>
+    <Speed>55</Speed>
+    <Strength>98</Strength>
+    <Abilities>Earthquake Stomp, Rock Shield, Super Strength</Abilities>
+    <Category>S</Category>
+  </Hero>
+  <Hero>
+    <HeroID>10</HeroID>
+    <Name>Seraphina</Name>
+    <Speed>85</Speed>
+    <Strength>75</Strength>
+    <Abilities>Healing Aura, Light Blast, Divine Shield</Abilities>
+    <Category>B</Category>
+  </Hero>
+  <Hero>
+    <HeroID>11</HeroID>
+    <Name>Crimson Fury</Name>
+    <Speed>95</Speed>
+    <Strength>70</Strength>
+    <Abilities>Blood Rage, Quick Reflexes, Adrenaline Rush</Abilities>
+    <Category>C</Category>
+  </Hero>
+  <Hero>
+    <HeroID>12</HeroID>
+    <Name>Specter</Name>
+    <Speed>72</Speed>
+    <Strength>78</Strength>
+    <Abilities>Phase Shift, Ghostly Howl, Spectral Strike</Abilities>
+    <Category>B</Category>
+  </Hero>
+  <Hero>
+    <HeroID>13</HeroID>
+    <Name>Solar Flare</Name>
+    <Speed>85</Speed>
+    <Strength>82</Strength>
+    <Abilities>Solar Beam, Sun Shield, Solar Flight</Abilities>
+    <Category>A</Category>
+  </Hero>
+  <Hero>
+    <HeroID>14</HeroID>
+    <Name>Lunar Shade</Name>
+    <Speed>90</Speed>
+    <Strength>65</Strength>
+    <Abilities>Moonlight Healing, Shadow Cloak, Lunar Blast</Abilities>
+    <Category>C</Category>
+  </Hero>
+  <Hero>
+    <HeroID>15</HeroID>
+    <Name>Aqua Warden</Name>
+    <Speed>70</Speed>
+    <Strength>80</Strength>
+    <Abilities>Water Manipulation, Tsunami Summon, Hydro Shield</Abilities>
+    <Category>B</Category>
+  </Hero>
+  <Hero>
+    <HeroID>16</HeroID>
+    <Name>Rogue Knight</Name>
+    <Speed>80</Speed>
+    <Strength>70</Strength>
+    <Abilities>Sword Mastery, Stealth, Shadow Strike</Abilities>
+    <Category>C</Category>
+  </Hero>
+  <Hero>
+    <HeroID>17</HeroID>
+    <Name>Phantom Queen</Name>
+    <Speed>78</Speed>
+    <Strength>76</Strength>
+    <Abilities>Phantom Strike, Invisibility, Fear Aura</Abilities>
+    <Category>A</Category>
+  </Hero>
+  <Hero>
+    <HeroID>18</HeroID>
+    <Name>Blizzard</Name>
+    <Speed>68</Speed>
+    <Strength>74</Strength>
+    <Abilities>Snowstorm, Ice Wall, Frostbite</Abilities>
+    <Category>B</Category>
+  </Hero>
+  <Hero>
+    <HeroID>19</HeroID>
+    <Name>Cybernova</Name>
+    <Speed>85</Speed>
+    <Strength>85</Strength>
+    <Abilities>Laser Blasts, Holographic Decoy, Tech Control</Abilities>
+    <Category>A</Category>
+  </Hero>
+  <Hero>
+    <HeroID>20</HeroID>
+    <Name>Windbreaker</Name>
+    <Speed>92</Speed>
+    <Strength>92</Strength>
+    <Abilities>Wind Slash, Air Manipulation, Speed Burst</Abilities>
+    <Category>S</Category>
+  </Hero>
+  <Hero>
+    <HeroID>21</HeroID>
+    <Name>proba</Name>
+    <Speed>14</Speed>
+    <Strength>12</Strength>
+    <Abilities>asd</Abilities>
+    <Category>A</Category>
+  </Hero>
+</Heroes>
