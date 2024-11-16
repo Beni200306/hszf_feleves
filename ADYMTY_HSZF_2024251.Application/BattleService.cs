@@ -116,7 +116,7 @@ namespace ADYMTY_HSZF_2024251.Application
                         MonsterID =int.Parse(t.Element("MonsterID").Value), 
                         Result=t.Element("Result").Value};
                 }).ToArray();
-            ;
+            
         }
     }
 }
