@@ -19,6 +19,7 @@ namespace ADYMTY_HSZF_2024251.Application
         void DefeatedMonsters();
         void ToXml();
         void FromXml();
+        void HeroesNoOfBattlesToTxt();
     }
     public class BattleService : IBattleService
     {
@@ -117,6 +118,19 @@ namespace ADYMTY_HSZF_2024251.Application
                         Result=t.Element("Result").Value};
                 }).ToArray();
             
+        }
+
+        public void HeroesNoOfBattlesToTxt()
+        {
+            var groupByHeroes = GetBattles().Where(t => t.BattleDate.Year == 2024).GroupBy(a=>a.Hero);
+            var battlesFought = groupByHeroes.Select(b => new { hero = b.Key.Name, noOfBattles = b.Count(),winrate= ((double)b.Count(c => c.Result == "Victory") / (double)b.Count()) * 100 });
+            string toTxt = "Hero,NumberOfBattles,Winrate\n";
+            foreach (var item in battlesFought)
+            {
+                toTxt += $"{item.hero},{item.noOfBattles},{item.winrate}\n";
+            }
+            File.WriteAllText(@"..\..\..\..\heroStatistics.txt",toTxt);
+            ;
         }
     }
 }
